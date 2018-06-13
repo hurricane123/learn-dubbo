@@ -3,9 +3,11 @@ package com.hurricane.learn.dubbo.biz.demo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.hurricane.learn.dubbo.service.demo.DemoService;
 
 
+@Service(interfaceClass=DemoService.class,timeout=1000)
 public class DemoServiceImpl implements DemoService{
 	private static Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);
 	

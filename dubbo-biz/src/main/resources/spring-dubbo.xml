@@ -14,8 +14,7 @@
     	<dubbo:method name="sayHello" timeout="2000"></dubbo:method>
 	</dubbo:service>
 	<dubbo:service interface="com.hurricane.learn.dubbo.service.user.UserService" ref="userService"></dubbo:service> 
-	
-	
+		
 	
 	
 	
